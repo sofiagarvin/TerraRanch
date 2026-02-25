@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cattle — Lone Star Land Planner</title>
+  <meta name="description" content="Cattle basics and cattle lease considerations for Texas landowners." />
+  <link rel="stylesheet" href="assets/style.css" />
+  <script defer src="assets/site.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <div class="container navbar">
+    <a class="brand" href="index.html">
+      <div class="brand-badge" aria-hidden="true"></div>
+      <div class="brand-title">
+        <strong>Lone Star Land Planner</strong>
+        <span>Decision support for Texas acreage</span>
+      </div>
+    </a>
+
+    <button class="burger" data-burger aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navlinks" data-nav aria-label="Primary">
+      <a data-navlink href="index.html">Home</a>
+      <a data-navlink href="product.html">Product</a>
+      <a data-navlink href="cattle.html">Cattle</a>
+      <a data-navlink href="renewables.html">Renewables</a>
+      <a data-navlink href="agritourism.html">Agritourism</a>
+      <a data-navlink href="conservation.html">Conservation</a>
+      <a data-navlink href="traditional-energy.html">Traditional Energy</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a class="btn primary" href="product.html">Use the Tool</a>
+      <a class="btn ghost" href="renewables.html">Next: Renewables</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Cattle</h1>
+      <div class="breadcrumb">Home / Cattle</div>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="container content-grid">
+      <div class="panel">
+        <h2>Two common approaches</h2>
+        <ul>
+          <li><b>Owner-operated:</b> higher upside, higher labor and operational risk.</li>
+          <li><b>Lease / custom grazing:</b> lower labor, more predictable, depends on a good lessee and infrastructure.</li>
+        </ul>
+
+        <h3>Infrastructure reality check</h3>
+        <ul>
+          <li>Reliable water (ponds, wells, troughs) and seasonal variability.</li>
+          <li>Fencing condition (perimeter and cross-fencing).</li>
+          <li>Access roads, gates, and handling pens if owner-operated.</li>
+          <li>Brush management and pasture health.</li>
+        </ul>
+
+        <h3>Questions to ask a potential lessee</h3>
+        <ul>
+          <li>Stocking plan and grazing rotation approach.</li>
+          <li>Who handles fence/water repairs and on what timeline.</li>
+          <li>Insurance coverage and liability expectations.</li>
+          <li>Payment timing and what triggers adjustments (drought, feed costs).</li>
+        </ul>
+
+        <div class="note">
+          This page is informational. Lease terms and liability vary; use local professionals for contracts.
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>Lease structures (high-level)</h2>
+        <ul>
+          <li><b>Per-acre lease:</b> simple, common for pasture.</li>
+          <li><b>AUM-based:</b> ties payment to grazing capacity.</li>
+          <li><b>Custom grazing:</b> landowner retains ownership of cattle; operator is paid for management (more complex).</li>
+        </ul>
+
+        <h3>Operational risk factors</h3>
+        <ul>
+          <li>Drought and water availability.</li>
+          <li>Fence failure and livestock escape liability.</li>
+          <li>Brush encroachment reducing carrying capacity.</li>
+          <li>Market volatility if owner-operated.</li>
+        </ul>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="product.html">Run your property through the tool</a>
+          <a class="btn" href="conservation.html">Conservation programs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>Lone Star Land Planner</strong>
+      <small>Modern land-use decision support for Texas properties.</small>
+    </div>
+    <div>
+      <a href="product.html">Product</a> ·
+      <a href="renewables.html">Renewables</a> ·
+      <a href="agritourism.html">Agritourism</a>
+      <small>© <span id="y"></span> — Static pilot site</small>
+    </div>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</footer>
+</body>
+</html>
