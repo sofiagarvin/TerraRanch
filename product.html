@@ -98,10 +98,11 @@
             <textarea id="constraints" name="constraints" placeholder="water availability, access road, neighbor concerns, time available, capital constraints…"></textarea>
           </div>
 
-          <div class="hero-actions">
-            <button class="btn primary" type="button" disabled title="We’ll enable this when Gemini is wired.">Generate (coming next)</button>
-            <a class="btn" href="renewables.html">Learn: Renewables</a>
-            <a class="btn" href="cattle.html">Learn: Cattle</a>
+         <div class="hero-actions">
+  <button class="btn primary" type="button" id="generateBtn">Generate</button>
+  <a class="btn" href="renewables.html">Learn: Renewables</a>
+  <a class="btn" href="cattle.html">Learn: Cattle</a>
+</div>
           </div>
         </form>
       </div>
@@ -110,17 +111,7 @@
         <h2>Example output</h2>
         <p>Once integrated, this panel will show the ranked land-use options, key assumptions, and next steps.</p>
 
-        <div class="output" aria-label="Output preview">
-Ranked options (example):
-1) Hunting lease + light habitat improvements
-2) Cattle lease (low labor) with fencing/water check
-3) Agritourism “weekend rental” test before venue build
-
-Next steps:
-- Confirm access and water
-- Check county/ETJ permitting implications
-- Get 2–3 local benchmark quotes (lease rates, fencing, insurance)
-- Validate any conservation program eligibility
+        <div class="output" id="outputBox" aria-label="Output">
         </div>
 
         <div class="note">
