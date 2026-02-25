@@ -236,13 +236,7 @@ header{
 }
 
 .hero-card{
-  background:
-    linear-gradient(rgba(255,250,240,0.88), rgba(243,234,220,0.88)),
-    url("main.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
+  background: linear-gradient(180deg, rgba(255,250,240,.95), rgba(243,234,220,.90));
   border:1px solid rgba(43,30,22,.16);
   border-radius: var(--radius2);
   box-shadow: var(--shadow);
