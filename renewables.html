@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Renewables — Lone Star Land Planner</title>
+  <meta name="description" content="Renewable energy leases, economics drivers, and trends for Texas landowners." />
+  <link rel="stylesheet" href="assets/style.css" />
+  <script defer src="assets/site.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <div class="container navbar">
+    <a class="brand" href="index.html">
+      <div class="brand-badge" aria-hidden="true"></div>
+      <div class="brand-title">
+        <strong>Lone Star Land Planner</strong>
+        <span>Decision support for Texas acreage</span>
+      </div>
+    </a>
+
+    <button class="burger" data-burger aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navlinks" data-nav aria-label="Primary">
+      <a data-navlink href="index.html">Home</a>
+      <a data-navlink href="product.html">Product</a>
+      <a data-navlink href="cattle.html">Cattle</a>
+      <a data-navlink href="renewables.html">Renewables</a>
+      <a data-navlink href="agritourism.html">Agritourism</a>
+      <a data-navlink href="conservation.html">Conservation</a>
+      <a data-navlink href="traditional-energy.html">Traditional Energy</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a class="btn primary" href="product.html">Use the Tool</a>
+      <a class="btn ghost" href="traditional-energy.html">Next: Traditional Energy</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Renewable energy leases</h1>
+      <div class="breadcrumb">Home / Renewables</div>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="container content-grid">
+      <div class="panel">
+        <h2>What developers typically evaluate</h2>
+        <ul>
+          <li><b>Land characteristics:</b> contiguous acreage, slope/terrain, floodplain considerations.</li>
+          <li><b>Access:</b> roads for construction and long-term maintenance.</li>
+          <li><b>Interconnection:</b> proximity to transmission/substations (often decisive).</li>
+          <li><b>Setbacks & neighbors:</b> county rules, visibility, and local sentiment.</li>
+        </ul>
+
+        <h3>Common lease phases (conceptual)</h3>
+        <ul>
+          <li><b>Option / development period:</b> developer studies the site; payment is usually lower.</li>
+          <li><b>Operating period:</b> if built, payments typically increase and persist for years.</li>
+        </ul>
+
+        <div class="note">
+          Site viability is highly location-specific. Interconnection and permitting can dominate “paper economics.”
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>Economics drivers (high-level)</h2>
+        <ul>
+          <li>Project size, layout constraints, and usable acres.</li>
+          <li>Transmission congestion and curtailment risk.</li>
+          <li>Developer cost of capital and power contract terms.</li>
+          <li>Decommissioning obligations and land restoration language.</li>
+        </ul>
+
+        <h3>Landowner risk checklist</h3>
+        <ul>
+          <li>Clear terms for decommissioning and restoration.</li>
+          <li>Assignment rights (who can take over the lease).</li>
+          <li>Access/easements, fencing, and livestock interaction.</li>
+          <li>Tax impacts and insurance requirements.</li>
+        </ul>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="product.html">See if renewables fit your land</a>
+          <a class="btn" href="conservation.html">Compare conservation options</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>Lone Star Land Planner</strong>
+      <small>Modern land-use decision support for Texas properties.</small>
+    </div>
+    <div>
+      <a href="product.html">Product</a> ·
+      <a href="cattle.html">Cattle</a> ·
+      <a href="agritourism.html">Agritourism</a>
+      <small>© <span id="y"></span> — Static pilot site</small>
+    </div>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</footer>
+</body>
+</html>
