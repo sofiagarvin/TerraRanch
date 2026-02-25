@@ -599,3 +599,15 @@ img {
 .example-output {
   flex: 1;
 }
+/* ===== FORCE TWO-COLUMN PRODUCT LAYOUT ===== */
+
+.content-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 40px !important;
+  align-items: start !important;
+}
+
+.content-grid > .panel {
+  width: 100% !important;
+}
