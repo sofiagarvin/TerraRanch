@@ -1,6 +1,6 @@
 /* assets/style.css — Southwestern / farmhouse theme (replace entire file) */
 .site-logo {
-  height: 50px;
+  height: 80px;
   width: auto;
   display: block;
 }
@@ -578,4 +578,24 @@ img {
   padding: 32px;
   border-radius: 16px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+}
+/* ===== PRODUCT PAGE TWO COLUMN LAYOUT ===== */
+
+/* Wrapper that holds both panels */
+.main-layout {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* Left panel (Property Inputs) */
+.property-inputs {
+  flex: 1;
+}
+
+/* Right panel (Example Output) */
+.example-output {
+  flex: 1;
 }
