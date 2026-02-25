@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lone Star Land Planner</title>
+  <meta name="description" content="A Texas land-use planning assistant for rural property owners." />
+  <link rel="stylesheet" href="assets/style.css" />
+  <script defer src="assets/site.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <div class="container navbar">
+    <a class="brand" href="index.html">
+      <div class="brand-badge" aria-hidden="true"></div>
+      <div class="brand-title">
+        <strong>Lone Star Land Planner</strong>
+        <span>Decision support for Texas acreage</span>
+      </div>
+    </a>
+
+    <button class="burger" data-burger aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navlinks" data-nav aria-label="Primary">
+      <a data-navlink href="index.html">Home</a>
+      <a data-navlink href="product.html">Product</a>
+      <a data-navlink href="cattle.html">Cattle</a>
+      <a data-navlink href="renewables.html">Renewables</a>
+      <a data-navlink href="agritourism.html">Agritourism</a>
+      <a data-navlink href="conservation.html">Conservation</a>
+      <a data-navlink href="traditional-energy.html">Traditional Energy</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a class="btn primary" href="product.html">Use the Tool</a>
+      <a class="btn ghost" href="conservation.html">Funding & Grants</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-card">
+        <div class="pad">
+          <div class="kicker"><i aria-hidden="true"></i> Built for Texas landowners</div>
+          <h1>Turn acreage into a plan: cashflow, legacy, or low-lift income.</h1>
+          <p class="lede">
+            Lone Star Land Planner is a practical decision assistant for rural properties—helping you compare land uses
+            like grazing, hunting, agritourism, renewables, conservation programs, and traditional energy leasing.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="product.html">Start a Property Plan</a>
+            <a class="btn" href="renewables.html">Explore Renewables</a>
+            <a class="btn" href="cattle.html">Explore Cattle</a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="pill"><b>Output:</b> ranked options + next steps</div>
+            <div class="pill"><b>Style:</b> practical, Texas-specific</div>
+            <div class="pill"><b>Use:</b> quick feasibility screening</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card side-visual">
+        <div class="visual-top">
+          <p class="visual-title">What the tool helps you decide</p>
+          <div class="visual-box">
+            <ul class="visual-list">
+              <li><span class="dot" aria-hidden="true"></span><div><b>What fits your land</b><span>Constraints, access, water, neighbors, time-to-cash.</span></div></li>
+              <li><span class="dot" aria-hidden="true"></span><div><b>Economics at a glance</b><span>Revenue drivers, capex intensity, and risk notes.</span></div></li>
+              <li><span class="dot" aria-hidden="true"></span><div><b>Next steps</b><span>Who to contact, what documents to gather, what to ask.</span></div></li>
+              <li><span class="dot" aria-hidden="true"></span><div><b>Tradeoffs</b><span>Low labor vs upside, short-term vs long-term, complexity vs stability.</span></div></li>
+            </ul>
+          </div>
+          <div class="note">
+            Not legal, tax, or investment advice. Always confirm local regulations and use qualified professionals.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Who this is for</h2>
+      <p>Texas landowners evaluating practical ways to monetize or steward rural property without getting lost in conflicting advice.</p>
+
+      <div class="grid3">
+        <div class="card">
+          <h3>Owner-operators</h3>
+          <p>Hands-on ranchers considering grazing, agritourism, or mixed-use operations.</p>
+          <a class="inline" href="cattle.html">Cattle fundamentals →</a>
+        </div>
+        <div class="card">
+          <h3>Absentee owners</h3>
+          <p>Families and LLCs seeking low-labor income options like leases or conservation programs.</p>
+          <a class="inline" href="conservation.html">Conservation programs →</a>
+        </div>
+        <div class="card">
+          <h3>Explorers</h3>
+          <p>Owners comparing major pathways: renewables, hunting, wedding venues, and energy development.</p>
+          <a class="inline" href="product.html">Run a comparison →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>Lone Star Land Planner</strong>
+      <small>Modern land-use decision support for Texas properties.</small>
+    </div>
+    <div>
+      <a href="product.html">Product</a> ·
+      <a href="renewables.html">Renewables</a> ·
+      <a href="agritourism.html">Agritourism</a> ·
+      <a href="traditional-energy.html">Traditional Energy</a>
+      <small>© <span id="y"></span> — Static pilot site</small>
+    </div>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</footer>
+</body>
+</html>
