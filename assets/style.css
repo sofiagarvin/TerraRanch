@@ -1,5 +1,9 @@
 /* assets/style.css — Southwestern / farmhouse theme (replace entire file) */
-
+.site-logo {
+  height: 54px;
+  width: auto;
+  display: block;
+}
 :root{
   /* Palette: parchment + adobe + saddle + sage */
   --bg: #f6f0e6;        /* parchment */
