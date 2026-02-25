@@ -611,3 +611,12 @@ img {
 .content-grid > .panel {
   width: 100% !important;
 }
+/* Product page background */
+.page-product .content {
+  background:
+    linear-gradient(rgba(255,250,240,0.70), rgba(243,234,220,0.70)),
+    url("product.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
