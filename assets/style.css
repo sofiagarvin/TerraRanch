@@ -226,7 +226,17 @@ header{
 }
 
 /* Hero */
-.hero{ padding:46px 0 10px; }
+.hero{
+  padding:46px 0 10px;
+
+  background:
+    linear-gradient(rgba(255,250,240,0.60), rgba(243,234,220,0.60)),
+    url("main.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .hero-grid{
   display:grid;
