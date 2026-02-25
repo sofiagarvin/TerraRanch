@@ -426,11 +426,11 @@ h1{
 
 .content{ padding:10px 0 40px; }
 
-.content-grid{
-  display:grid;
-  grid-template-columns: 1fr 0.95fr;
-  gap:18px;
-  align-items:start;
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
 }
 
 .panel{
