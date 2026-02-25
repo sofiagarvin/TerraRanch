@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agritourism — Lone Star Land Planner</title>
+  <meta name="description" content="Agritourism options: wedding venues, dude ranch concepts, hunting, and rural hospitality." />
+  <link rel="stylesheet" href="assets/style.css" />
+  <script defer src="assets/site.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <div class="container navbar">
+    <a class="brand" href="index.html">
+      <div class="brand-badge" aria-hidden="true"></div>
+      <div class="brand-title">
+        <strong>Lone Star Land Planner</strong>
+        <span>Decision support for Texas acreage</span>
+      </div>
+    </a>
+
+    <button class="burger" data-burger aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navlinks" data-nav aria-label="Primary">
+      <a data-navlink href="index.html">Home</a>
+      <a data-navlink href="product.html">Product</a>
+      <a data-navlink href="cattle.html">Cattle</a>
+      <a data-navlink href="renewables.html">Renewables</a>
+      <a data-navlink href="agritourism.html">Agritourism</a>
+      <a data-navlink href="conservation.html">Conservation</a>
+      <a data-navlink href="traditional-energy.html">Traditional Energy</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a class="btn primary" href="product.html">Use the Tool</a>
+      <a class="btn ghost" href="conservation.html">Next: Conservation</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Agritourism</h1>
+      <div class="breadcrumb">Home / Agritourism</div>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="container content-grid">
+      <div class="panel">
+        <h2>Common models</h2>
+        <ul>
+          <li><b>Wedding / event venue:</b> high capex; branding, permitting, and operations intensive.</li>
+          <li><b>Cabins / weekend rentals:</b> scalable; test demand before major builds.</li>
+          <li><b>Hunting:</b> seasonal; can pair with habitat work and grazing.</li>
+          <li><b>Dude ranch experiences:</b> highest labor and liability; depends on staff and experience design.</li>
+        </ul>
+
+        <h3>What tends to drive success</h3>
+        <ul>
+          <li>Access from major metros, and road quality.</li>
+          <li>Unique “story” and amenities (not just land).</li>
+          <li>Insurance and safety planning.</li>
+          <li>Operations: cleaning, staffing, maintenance, guest experience.</li>
+        </ul>
+
+        <div class="note">
+          Agritourism is often more “hospitality business” than “land business.” Underwrite it that way.
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>Economics at a glance</h2>
+        <ul>
+          <li><b>Revenue:</b> bookings × price × seasonality.</li>
+          <li><b>Costs:</b> build capex, insurance, utilities, staffing, marketing, repairs.</li>
+          <li><b>Risk:</b> demand volatility; reviews; permitting and neighbor constraints.</li>
+        </ul>
+
+        <h3>Low-risk sequencing</h3>
+        <ul>
+          <li>Start with a small “proof of demand” unit.</li>
+          <li>Validate wedding/event demand before building dedicated venues.</li>
+          <li>Layer with leases (hunting/grazing) to stabilize cashflow.</li>
+        </ul>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="product.html">See if agritourism fits your land</a>
+          <a class="btn" href="cattle.html">Pair with grazing</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>Lone Star Land Planner</strong>
+      <small>Modern land-use decision support for Texas properties.</small>
+    </div>
+    <div>
+      <a href="product.html">Product</a> ·
+      <a href="renewables.html">Renewables</a> ·
+      <a href="traditional-energy.html">Traditional Energy</a>
+      <small>© <span id="y"></span> — Static pilot site</small>
+    </div>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</footer>
+</body>
+</html>
