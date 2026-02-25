@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product — Lone Star Land Planner</title>
+  <meta name="description" content="Enter property details and generate a land-use recommendation." />
+  <link rel="stylesheet" href="assets/style.css" />
+  <script defer src="assets/site.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <div class="container navbar">
+    <a class="brand" href="index.html">
+      <div class="brand-badge" aria-hidden="true"></div>
+      <div class="brand-title">
+        <strong>Lone Star Land Planner</strong>
+        <span>Decision support for Texas acreage</span>
+      </div>
+    </a>
+
+    <button class="burger" data-burger aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navlinks" data-nav aria-label="Primary">
+      <a data-navlink href="index.html">Home</a>
+      <a data-navlink href="product.html">Product</a>
+      <a data-navlink href="cattle.html">Cattle</a>
+      <a data-navlink href="renewables.html">Renewables</a>
+      <a data-navlink href="agritourism.html">Agritourism</a>
+      <a data-navlink href="conservation.html">Conservation</a>
+      <a data-navlink href="traditional-energy.html">Traditional Energy</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a class="btn primary" href="product.html">Use the Tool</a>
+      <a class="btn ghost" href="index.html">Overview</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <h1>The Product</h1>
+      <div class="breadcrumb">Home / Product</div>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="container content-grid">
+      <div class="panel">
+        <h2>Property inputs</h2>
+        <p>Static pilot form (we’ll connect it to Gemini after the site is live).</p>
+
+        <form class="form">
+          <div class="form-row">
+            <div class="field">
+              <label for="county">County</label>
+              <input id="county" name="county" placeholder="e.g., Bosque County" />
+            </div>
+            <div class="field">
+              <label for="acres">Acreage</label>
+              <input id="acres" name="acres" type="number" min="1" placeholder="e.g., 500" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="current">Current use</label>
+              <select id="current" name="current">
+                <option value="">Select…</option>
+                <option>Idle / recreational</option>
+                <option>Cattle grazing</option>
+                <option>Hunting lease</option>
+                <option>Row crops / hay</option>
+                <option>Mixed use</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="horizon">Time horizon</label>
+              <select id="horizon" name="horizon">
+                <option value="">Select…</option>
+                <option>0–12 months</option>
+                <option>1–3 years</option>
+                <option>3–7 years</option>
+                <option>7+ years</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="goals">Goals (comma-separated)</label>
+            <input id="goals" name="goals" placeholder="cashflow, low labor, habitat, legacy, tax benefits…" />
+          </div>
+
+          <div class="field">
+            <label for="constraints">Constraints / notes</label>
+            <textarea id="constraints" name="constraints" placeholder="water availability, access road, neighbor concerns, time available, capital constraints…"></textarea>
+          </div>
+
+          <div class="hero-actions">
+            <button class="btn primary" type="button" disabled title="We’ll enable this when Gemini is wired.">Generate (coming next)</button>
+            <a class="btn" href="renewables.html">Learn: Renewables</a>
+            <a class="btn" href="cattle.html">Learn: Cattle</a>
+          </div>
+        </form>
+      </div>
+
+      <div class="panel">
+        <h2>Example output</h2>
+        <p>Once integrated, this panel will show the ranked land-use options, key assumptions, and next steps.</p>
+
+        <div class="output" aria-label="Output preview">
+Ranked options (example):
+1) Hunting lease + light habitat improvements
+2) Cattle lease (low labor) with fencing/water check
+3) Agritourism “weekend rental” test before venue build
+
+Next steps:
+- Confirm access and water
+- Check county/ETJ permitting implications
+- Get 2–3 local benchmark quotes (lease rates, fencing, insurance)
+- Validate any conservation program eligibility
+        </div>
+
+        <div class="note">
+          This is a static placeholder. After the site is live, we’ll wire this to Gemini using an API proxy (keeps keys secure).
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>Lone Star Land Planner</strong>
+      <small>Modern land-use decision support for Texas properties.</small>
+    </div>
+    <div>
+      <a href="index.html">Home</a> ·
+      <a href="conservation.html">Conservation</a> ·
+      <a href="traditional-energy.html">Traditional Energy</a>
+      <small>© <span id="y"></span> — Static pilot site</small>
+    </div>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</footer>
+</body>
+</html>
